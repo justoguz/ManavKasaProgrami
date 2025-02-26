@@ -13,20 +13,22 @@ public class ManavKasaProgramiApplication {
 		SpringApplication.run(ManavKasaProgramiApplication.class, args);
 		Scanner input = new Scanner(System.in);
 
-		int kg;
+		int armutKG, elmaKG, muzKG;
 		double armutTL = 2.14, elmaTL = 3.00, muzTL = 4.00 , total;
 
 		System.out.print("Kaç Kilo Armut ? ");
-		kg = input.nextInt();
+		armutKG = input.nextInt();
 
 		System.out.print("Kaç Kilo Elma ? ");
-		kg = input.nextInt();
+		elmaKG = input.nextInt();
 
 		System.out.print("Kaç Kilo Muz ? ");
-		kg = input.nextInt();
+		muzKG = input.nextInt();
 
-		total = (kg * armutTL) + (kg * elmaTL) + (kg * muzTL);
+		total = (armutKG * armutTL) + (elmaKG * elmaTL) + (muzKG * muzTL);
 		System.out.println("Toplam Tutar : " + total + " TL");
+
+		input.close();
 
 	}
 
